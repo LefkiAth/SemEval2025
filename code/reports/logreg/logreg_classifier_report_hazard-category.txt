@@ -1,0 +1,16 @@
+Classification Report for Logistic Regression Classifier (hazard-category):
+                                precision    recall  f1-score   support
+
+                     allergens       0.87      0.84      0.86       363
+                    biological       0.89      0.89      0.89       349
+                      chemical       0.78      0.77      0.78        65
+food additives and flavourings       0.43      0.75      0.55         4
+                foreign bodies       0.81      0.79      0.80       105
+                         fraud       0.54      0.65      0.59        78
+          organoleptic aspects       0.58      0.64      0.61        11
+                  other hazard       0.67      0.55      0.60        29
+              packaging defect       0.31      0.31      0.31        13
+
+                      accuracy                           0.82      1017
+                     macro avg       0.65      0.69      0.66      1017
+                  weighted avg       0.82      0.82      0.82      1017
