@@ -43,33 +43,23 @@ The main goals are:
 
 ## **Libraries**
 ---
-
-# Load required libraries
 import pandas as pd # Pandas: For data loading and manipulation
-
-# Scikit-learn: For TF-IDF, model building, and evaluation
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import classification_report, f1_score
 from IPython.display import display # Display the TF-IDF DataFrames
-# Import required libraries
-
 from catboost import CatBoostClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, f1_score
 import pandas as pd
 import numpy as np
-
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import FancyBboxPatch
 from matplotlib.colors import ListedColormap
-# Setting seed for reproducibility
 np.random.seed(42)
 from catboost import CatBoostClassifier
 from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
-
-# Import necessary libraries
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
