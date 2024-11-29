@@ -75,8 +75,10 @@ The solution involves:
 1. **TF-IDF Vectorization**:
    - **Title Vectorization**: Extracted 50 features using **unigrams** and **bigrams**.
    - **Text Vectorization**: Extracted 200 features using **unigrams** and **bigrams**.
+![TF-IDF Feature Visualization](code/images/tfidf-traintext.png)
 
 2. **Handling Class Imbalance**: Rare classes (fewer than 5 samples) were grouped into an "other" category.
+
 
 ### **Model Development**
 
@@ -117,16 +119,21 @@ def compute_score(hazards_true, products_true, hazards_pred, products_pred):
 
 ### **Combined Score Summary**
 
-- **Titles** (Subtask 1): Combined score of **0.0989**.
-- **Texts** (Subtask 1): Combined score of **0.1087**.
-- **Titles** (Subtask 2): Combined score of **0.3176**.
-- **Texts** (Subtask 2): Combined score of **0.3902**.
+**CatBoost (CB):**
+- Combined Score (Titles): 0.3176​(Benchmark_Analysis_CB).
+- Combined Score (Text): 0.3902​(Benchmark_Analysis_CB).
+**Logistic Regression (LR):**
+- Combined Score (Titles): 0.4051​(Benchmark_Analysis_LR).
+- Combined Score (Text): 0.210​(Benchmark_Analysis_LR).
 
-The **CatBoost Classifier** performed slightly better on text data than titles, indicating the importance of full contextual information in accurate hazard and product classification.
+#### Key Insights:
+Logistic Regression achieved the highest combined F1 score for titles (0.4051).
+CatBoost performed better than Logistic Regression for text (0.3902 vs. 0.210).
+Both models struggle with imbalanced classes, particularly for hazard and product vectors.
+
+The **CatBoost Classifier** performed slightly worse on text data than titles, indicating the importance of full contextual information in accurate hazard and product classification.
 
 ### **Visualization**
-
-![Combined F1 Score Visualization for Text](images/combined_f1_score_text.png)
 
 - **Texts** outperformed **titles** in both subtasks.
 - The **hazard category** predictions were generally more accurate than **product predictions**, possibly due to greater consistency in hazard-related terminology.
