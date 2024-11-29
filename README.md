@@ -75,7 +75,7 @@ The solution involves:
 1. **TF-IDF Vectorization**:
    - **Title Vectorization**: Extracted 50 features using **unigrams** and **bigrams**.
    - **Text Vectorization**: Extracted 200 features using **unigrams** and **bigrams**.
-![TF-IDF Feature Visualization](code/images/tfidf-traintext.png)
+
 
 2. **Handling Class Imbalance**: Rare classes (fewer than 5 samples) were grouped into an "other" category.
 
