@@ -41,33 +41,7 @@ The main goals are:
 - **Explainability**: Develop interpretable models that support human experts in assessing food risks.
 - **High Performance**: Achieve robust classification scores based on the **macro F1-Score**, focusing primarily on hazard labels.
 
-## **Libraries**
----
-import pandas as pd # Pandas: For data loading and manipulation
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.metrics import classification_report, f1_score
-from IPython.display import display # Display the TF-IDF DataFrames
-from catboost import CatBoostClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, f1_score
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import numpy as np
-from matplotlib.patches import FancyBboxPatch
-from matplotlib.colors import ListedColormap
-np.random.seed(42)
-from catboost import CatBoostClassifier
-from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
-import pandas as pd
-import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.model_selection import train_test_split, RandomizedSearchCV
-from sklearn.metrics import f1_score, classification_report
-from catboost import CatBoostClassifier
-from sklearn.linear_model import LogisticRegression
----
+
 ## **Data Overview**
 
 - **Training Data**: Labeled dataset containing 5,082 samples. Features include:
